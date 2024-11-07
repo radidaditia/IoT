@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem IoT</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script> 
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistem IoT</h1>
+
+        <!-- Status Koneksi -->
+        <div class="status">
+            <h2>Status Koneksi: <span id="connection-status" class="disconnected">Terputus</span></h2>
+        </div>
+
+        <!-- Data Sensor -->
+        <div class="data">
+            <h3>Data Sensor</h3>
+            <p>Suhu: <span id="temperature">25°C</span></p>
+            <p>Kelembaban: <span id="humidity">60%</span></p>
+        </div>
+
+        <!-- Kontrol Lampu -->
+        <div class="lamp-control">
+            <h3>Kontrol Lampu</h3>
+            <button id="lamp-on">Nyala</button> <!-- Tombol untuk menyalakan lampu -->
+            <button id="lamp-off">Mati</button> <!-- Tombol untuk mematikan lampu -->
+        </div>
+    </div>
+</body>
+
+</html>

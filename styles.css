@@ -1,0 +1,41 @@
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 20px 30px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.status,
+.data,
+.lamp-control {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.status span {
+  font-weight: bold;
+}
+.status.connected {
+  color: green;
+}
+.status.disconnected {
+  color: red;
+}
+.lamp-control button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+#lamp-on {
+  background-color: green;
+}
+#lamp-off {
+  background-color: red;
+}
